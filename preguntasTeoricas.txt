@@ -1,0 +1,56 @@
+Pregunta1:
+1. La API de Facebook es un conjunto de herramientas y funciones que permiten a los desarrolladores crear aplicaciones web que interactúan 
+con la plataforma de Facebook. Las aplicaciones pueden utilizar la API para acceder a datos de usuario, publicar contenido en el muro del
+ usuario y realizar otras acciones en nombre del usuario.
+
+2. Un token de acceso es una cadena de caracteres que se utiliza para autenticar y autorizar las solicitudes de la API de Facebook. Es 
+importante porque permite a las aplicaciones acceder a los datos del usuario y realizar acciones en su nombre. Sin un token de acceso 
+válido, la API de Facebook no permitirá que la aplicación acceda a los datos del usuario.
+
+3. El proceso general para obtener un token de acceso válido para acceder a la API de Facebook es el siguiente:
+- Crear una aplicación en el sitio web de desarrolladores de Facebook.
+- Configurar la aplicación con los permisos necesarios para acceder a los datos del usuario.
+- Obtener un código de autorización mediante la autenticación del usuario.
+- Intercambiar el código de autorización por un token de acceso válido.
+
+4. Algunos ejemplos comunes de casos de uso para la API de Facebook en aplicaciones web incluyen:
+- Permitir que los usuarios inicien sesión en una aplicación utilizando su cuenta de Facebook.
+- Acceder a los datos del perfil del usuario, como su nombre, foto y lista de amigos.
+- Publicar contenido en el muro del usuario, como fotos, videos y mensajes.
+- Realizar análisis de datos sobre la actividad del usuario en Facebook.
+
+5. Para gestionar la paginación de resultados al hacer una llamada a la API de Facebook que devuelve una gran cantidad de datos, se 
+puede utilizar el parámetro "limit" para especificar el número máximo de resultados que se deben devolver por página. También se puede
+ utilizar el parámetro "offset" para especificar el número de resultados que se deben omitir antes de comenzar a devolver resultados. De 
+ esta manera, se pueden recuperar los datos en varias páginas y evitar sobrecargar la aplicación con una gran cantidad de datos al mismo
+  tiempo.
+
+
+
+Pregunta2:
+6. Una extensión de Google Chrome es un programa que se instala en el navegador y agrega funcionalidades adicionales. Algunos posibles 
+usos incluyen bloqueadores de anuncios, herramientas de productividad, extensiones de seguridad y de personalización.
+
+7. Típicamente, una extensión de Chrome se estructura en términos de archivos y directorios de la siguiente manera:
+- Un archivo manifest.json que describe la extensión y sus permisos.
+- Un archivo popup.html que define la interfaz de usuario para la ventana emergente.
+- Un archivo background.js que ejecuta código en segundo plano.
+- Otros archivos y directorios que contienen recursos como imágenes, estilos y scripts.
+
+8. Para crear una extensión que muestre una notificación cada vez que el usuario inicie sesión en Facebook, los pasos generales serían 
+los siguientes:
+- Crear un archivo manifest.json que declare los permisos necesarios para acceder a Facebook.
+- Crear un archivo background.js que escuche los eventos de inicio de sesión en Facebook y muestre una notificación.
+- Crear un archivo popup.html que contenga la interfaz de usuario para la ventana emergente.
+
+9. El "contenido activo" (content script) en una extensión de Chrome es un script que se ejecuta en el contexto de una página web cargada 
+en el navegador. Se utiliza para manipular el contenido de la página, interactuar con elementos de la página y realizar otras acciones en 
+nombre del usuario.
+
+10. Para gestionar los permisos y la seguridad en una extensión de Chrome y asegurarse de que solo accede a la información necesaria y
+ mantiene la privacidad del usuario, se pueden seguir algunas prácticas recomendadas, como:
+- Minimizar los permisos requeridos por la extensión.
+- Utilizar las API de Chrome para solicitar permisos adicionales solo cuando sea necesario.
+- No almacenar información sensible del usuario sin su consentimiento explícito.
+- Utilizar conexiones seguras (HTTPS) para comunicarse con servicios externos.
+- Realizar pruebas de seguridad regulares para detectar posibles vulnerabilidades.

@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Notificador de Inicio de Sesión de Facebook",
+    "version": "1.0",
+    "description": "Muestra una notificación cuando el usuario inicia sesión en Facebook",
+    "permissions": [
+      "tabs",
+      "notifications",
+      "storage",
+      "activeTab",
+      "scripting"
+      
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "background": {
+      "service_worker": "popup.js"
+    },
+    "host_permissions":[
+        "https://www.facebook.com/*"
+
+    ]
+  }
